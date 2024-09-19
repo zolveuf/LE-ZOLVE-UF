@@ -1,0 +1,879 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+:root{
+    --color1: #001373;
+    --color2: #000729;
+}
+body {
+    font-size: 1rem; 
+    font-weight: 400; 
+    line-height: 1.5; 
+}
+ul{
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif; 
+    font-weight: 400;
+}
+h1 {
+    font-size: 3rem; 
+}
+h2 {
+    font-size: 2rem; 
+}
+h3 {
+    font-size: 1.25rem;
+}
+h5 {
+    font-size: 1.25rem; 
+}
+h6 {
+    font-size: 1rem; 
+}
+p {
+    font-size: 1.25rem; 
+    font-weight: 400; 
+}
+a {
+    font-weight: 500; 
+    text-decoration: none; 
+}
+.section-divider {
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--color1), transparent);
+    margin: 2rem 0; /* Adjust spacing as needed */
+}
+/* ----------------------------------------------
+   HEADER
+---------------------------------------------- */
+.navigation-bar {
+    min-height: 100vh;
+    background: url(img/hero.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 0.8rem 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px); 
+    z-index: -1;
+}
+.header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgb(45, 45, 45), transparent);
+    transition: .7s;
+    z-index: 39;
+}
+.header:hover::after{
+    left: 100%;
+    z-index: 39;
+}
+.logo{
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2em;
+}
+.navbar a{
+    font-size: 1.25rem;
+    color: white;
+    font-weight: 600;
+    margin-left: 1.5rem;
+    transition: .3s ease;
+    z-index: 40;
+}
+.navbar a:last-child i {
+    display: none;
+}
+.navbar a:hover {
+    color: var(--color1); 
+}
+#check{
+    display: none;
+}
+.icons {
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: white;
+    padding: 1rem;
+    max-width: 80%;
+}
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+.hero-description {
+    font-size: 1.25rem; 
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.125rem; 
+    font-weight: 600;
+    color: white;
+    text-wrap: nowrap;
+    background-color: var(--color1); 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease, transform 0.3s ease;
+}
+.cta-button:hover {
+    background-color: none; 
+    transform: scale(1.01); 
+    color: var(--color1);
+}
+/* ----------------------------------------------
+   UF PAKET
+---------------------------------------------- */
+.uf-paket {
+    width: 100%;
+    padding: 5% 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.uf-paket h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.uf-paket h2 {
+    margin-bottom: 1.5rem;
+}
+.uf-paket-info {
+    margin: 0;
+    max-width: 800px;
+    text-align: left;
+    line-height: 1.6;
+}
+.uf-paket-info p {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+.uf-paket-info .cta-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: var(--color1);
+    color: white;
+    text-align: left;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.uf-paket-info .cta-button:hover {
+    background-color: white;
+    border: var(--color1) 1px solid;
+    color: var(--color1);
+}
+/* ----------------------------------------------
+   TJÄNSTER SEKTION
+---------------------------------------------- */
+.tjänster-info a {
+    display: block;
+    color: white;
+    text-decoration: none; 
+}
+.tjänster {
+    width: 100%;
+    padding: 0% 7%;
+    text-align: center;
+    padding: 5% 7%;
+}
+.tjänster h1 {
+    margin-bottom: 2rem;
+}
+.tjänster-info{
+    margin: 0;
+    max-width: 100%;
+    text-align: left;
+    line-height: 1.2;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 20px 0px;
+    color: #fff;
+}
+.tjänster-hemsidor{
+    border: var(--color1) solid 1px;
+    padding: 10vw 10%;
+    background-image: url(img/hemsidor-mörk.JPG);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    transition: .3s all ease-in-out;
+    border-radius: 10px;
+}
+.tjänster-hemsidor:hover{
+    color:  var(--color1);
+}
+.tjänster-logotyper{
+    border: var(--color1) solid 1px;
+    padding: 10vw 10%;
+    background-image: url(img/logotyper-mörk.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    transition: .3s all ease-in-out;
+    border-radius: 10px;
+}
+.tjänster-logotyper:hover{
+    color:  var(--color1);
+}
+/* ----------------------------------------------
+   KUNDER SEKTION
+---------------------------------------------- */
+.kunder-info a {
+    display: block;
+    color: white;
+    text-decoration: none; 
+}
+.kunder {
+    width: 100%;
+    padding: 0% 7%;
+    text-align: center;
+    padding: 5% 7%;
+}
+.kunder h1 {
+    margin-bottom: 2rem;
+}
+.kunder-info{
+    margin: 0;
+    max-width: 100%;
+    text-align: left;
+    line-height: 1.2;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 20px 0px;
+    color: #fff;
+}
+.kunder-link-aurorastäd{
+    border: var(--color1) solid 1px;
+    padding: 20vh 16vw;
+    background-image: url(img/hemsidor-mörk.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    transition: .3s all ease-in-out;
+    border-radius: 10px;
+}
+.kunder-link-2{
+    border: var(--color1) solid 1px;
+    padding: 20vh 16vw;
+    background-image: url(img/hemsidor-mörk.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    transition: .3s all ease-in-out;
+    border-radius: 10px;
+}
+.kunder-link-aurorastäd:hover{
+    filter: brightness(400%);
+}
+.kunder-link-2:hover{
+    filter: brightness(400%);
+}
+/* ----------------------------------------------
+   FOOTER
+---------------------------------------------- */
+.container{
+	max-width: 1170px;
+	margin: auto;
+}
+.row{
+	display: flex;
+}
+.footer{
+	background-color: var(--color2);
+    padding: 70px 0;
+}
+.footer-col{
+   width: 30%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: var(--color1);
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: var(--color1);
+	background-color: #ffffff;
+}
+.footer-end{
+    text-align: center;
+	color: #bbbbbb;
+    margin-top: 5rem;
+}
+/* ----------------------------------------------
+   EXTRA SIDOR
+---------------------------------------------- */
+.navigation-bar-2 {
+    min-height: 40vh;
+    background: url(img/hero.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+}
+.hero-content-2 {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: white;
+    padding: 1rem;
+    max-width: 80%;
+}
+#start {
+    padding-top: 100px; 
+    margin-top: -100px;
+}
+/* ----------------------------------------------
+   MEDIA QUERY
+---------------------------------------------- */
+@media (max-width: 805px) {
+    .uf-paket, .tjänster {
+        padding: 3% 4%;
+        text-align: center;
+    }
+    .uf-paket h2, .tjänster h2 {
+        font-size: 1.5rem;
+    }
+    .uf-paket-info{
+        text-align: center;
+    }
+    .uf-paket-info p {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .icons{
+        display: inline-flex;
+    }
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+    .icons #close-icon{
+        display: none;
+    }
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(0, 0, 0, .9);
+        backdrop-filter: blur(50px);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .9);
+        overflow: hidden;
+        transition: .3s ease;
+    }
+    .hero-content-2 {
+        align-items: center;
+        text-align: center;
+
+    }
+    .hero-title-2{
+        text-align: center;
+    }
+    .header{
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .9);
+    backdrop-filter: blur(50px);
+    }
+    #check:checked~.navbar{
+        height: 17.7rem;
+
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: .3s ease;
+    }
+    #check:checked~.navbar a{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(--i));
+        opacity: 1;
+    }
+    .navbar a:last-child i {
+        color: #fff;
+        display: block;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+    .navbar a:last-child:hover i {
+        color: #E1306C;
+        transform: scale(1.2); 
+    }
+    .hero-content {
+        right: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 0.9rem; 
+        padding: 0.5rem;
+        text-align: center;
+        min-width: 90%;
+    }
+    .hero-title {
+        font-size: 2rem; 
+    }
+    .hero-description {
+        margin-bottom: 1rem;
+    }
+    .cta-button {
+        font-size: 1rem; 
+        padding: 0.5rem 1rem; 
+        text-align: center;
+    }
+    .uf-paket-info .cta-button{
+        font-size: 1rem; 
+        text-align: center;
+        padding: 0.5rem 1rem; 
+        margin: 0 auto;
+        display: inline-block;
+    }
+    .uf-paket{
+        width: 100%;
+        height: 60vh;
+        text-align: center;
+    }
+    .tjänster-info{
+        display: inline-block;
+        flex-direction: column;
+        text-align: center;
+    }
+    .tjänster-info > a {
+        margin-bottom: 2rem; 
+    }
+    .tjänster-info > a:last-child {
+        margin-bottom: 0; 
+    }
+    .tjänster-hemsidor{
+        padding: 10vh 20vw;
+        text-align: center;
+    }
+    .tjänster-logotyper{
+        padding: 10vh 20vw;
+        text-align: center;
+    }
+
+}
+    @media (max-width: 576px) {
+        .uf-paket h2, .tjänster h2{
+            font-size: 1.4rem;
+        }
+
+        .uf-paket-info p{
+            font-size: 0.875rem;
+        }
+}
+    @media (max-width: 360px){
+        .uf-paket{
+            height: 60vh;
+        }
+}
+@media(max-width: 767px){
+    .footer-col{
+        flex-direction: column;
+      width: 10%;
+      margin-bottom: 30px;
+  }
+  .service-info-image{
+    display: none;
+}
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 50%;
+      white-space: nowrap;
+
+  }
+}
+@media (max-width: 600px) {
+    .hero-content-2 {
+        padding: 20px;
+        text-align: center;
+    }
+    .hero-content-2 h1{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .hero-title-2 {
+        font-size: 0rem;
+    }
+
+    .service-info {
+        padding: 0 0;
+    }
+
+    .service-info-container {
+        flex-direction: column;
+        padding: 0 0px;
+    }
+
+    .service-info-text {
+        flex-basis: 100%;
+        padding: 0px 0;
+        text-align: left;
+    }
+
+    .service-info-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .service-info-text p {
+        font-size: 1rem;
+    }
+
+    .service-info-image {
+        flex-basis: 100%;
+        padding: 20px 0;
+    }
+
+    .cta-section {
+        margin: 0 20px;
+    }
+
+    .cta-button {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+    @media (max-width: 768px) {
+        .row {
+            flex-direction: column;
+            gap: 30px;
+        }
+    
+        .contact-col {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    
+        .contact-container {
+            justify-content: center;
+            width: 100%;
+        }
+    
+        .contact-left {
+            padding: 16px;
+            max-width: 100%;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .hero-title-2 {
+        font-size: 3rem;
+    }
+
+    .service-info-text h1 {
+        font-size: 3rem;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+    .footer-col{
+        width: 60%;
+    }
+}
+@media (max-width: 768px) {
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 90%;
+    }
+}
+/* ----------------------------------------------
+   TJÄNSTER SIDA
+---------------------------------------------- */
+.service-info {
+    padding: 10px 0;
+}
+.service-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+    flex-wrap: wrap;
+}
+.service-info-text {
+    flex-basis: 55%;
+    padding: 40px;
+}
+.service-info-text h1 {
+    font-size: 3.5rem;
+    color: var(--color1);
+    margin-bottom: 30px;
+}
+.service-info-text p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+}
+.service-info-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+.service-info-text li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+.service-info-image {
+    flex-basis: 40%;
+    text-align: center;
+}
+.service-info-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.cta-section {
+    text-align: center;
+    margin: 0 100px; 
+    padding-bottom: 40px;
+}
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--color1); 
+    text-decoration: none; 
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 10px; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.cta-button:hover {
+    background-color: white; 
+    transform: scale(1.05); 
+    border: 1px solid var(--color1);
+}
+/* ----------------------------------------------
+   OM OSS SIDA
+---------------------------------------------- */
+.about-us {
+    padding: 30px 0; 
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+.about-content {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.about-content h1 {
+    font-size: 3.5rem; 
+    color: var(--color1); 
+    margin-bottom: 30px; 
+}
+.about-content p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #333;
+}
+.team-section {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.team-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.team-member {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+}
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.team-member p {
+    font-size: 1rem;
+    color: #333;
+}
+/* ----------------------------------------------
+   KONTAKTA OSS SIDA
+---------------------------------------------- */
+.contact-us {
+    padding: 40px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.contact-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1 1 300px;
+}
+.contact-col i {
+    font-size: 24px;
+    color: var(--color1);
+    margin-bottom: 8px;
+}
+.contact-col h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+.contact-col p {
+    font-size: 14px;
+    color: #666;
+}
+.contact-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex: 1 1 400px;
+}
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 500px;
+    width: 100%;
+    padding: 16px;
+    background-color: #fff;
+    border: 1px solid var(--color1);
+    border-radius: 8px;
+}
+.contact-inputs {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+textarea.contact-inputs {
+    min-height: 120px;
+    resize: none;
+    max-width: 100%;
+}
+.cta-button img {
+    margin-left: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+
+
+
