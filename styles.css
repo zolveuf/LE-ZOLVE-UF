@@ -107,7 +107,7 @@ a {
 .navbar a{
     font-size: 1.25rem;
     color: white;
-    font-weight: 600;
+    font-weight: 500;
     margin-left: 1.5rem;
     transition: .3s ease;
     z-index: 40;
