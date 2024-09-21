@@ -8,6 +8,16 @@
     --color1: #535C91;
     --color2: #1B1A55; 
 }
+.img{
+    width: 40%;
+    padding: 10px 10px;
+    border: 1px transparent solid;
+    border-radius: 15px;
+    transition: .7s ;
+}
+.img:hover{
+    background-color: #c3c3c3;
+}
 body {
     font-size: 1rem; 
     font-weight: 400; 
@@ -88,6 +98,7 @@ a {
     left: -100%;
     width: 100%;
     height: 100%;
+    opacity: 30%;
     background: linear-gradient(90deg, transparent, rgb(45, 45, 45), transparent);
     transition: .7s;
     z-index: 39;
@@ -161,9 +172,9 @@ a {
     transition: 0.3s ease, transform 0.3s ease;
 }
 .cta-button:hover {
-    background-color: none; 
-    transform: scale(1.01); 
+    background-color: white; 
     color: var(--color1);
+    border: 1px solid var(--color1);
 }
 /* ----------------------------------------------
    UF PAKET
@@ -335,7 +346,6 @@ a {
 .footer-col h4{
 	font-size: 18px;
 	color: #ffffff;
-	text-transform: capitalize;
 	margin-bottom: 35px;
 	font-weight: 500;
 	position: relative;
@@ -355,7 +365,6 @@ a {
 }
 .footer-col ul li a{
 	font-size: 16px;
-	text-transform: capitalize;
 	color: #ffffff;
 	text-decoration: none;
 	font-weight: 300;
@@ -728,21 +737,6 @@ a {
     text-align: center;
     margin: 0 100px; 
     padding-bottom: 40px;
-}
-.cta-button {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background-color: var(--color1); 
-    text-decoration: none; 
-    font-size: 1.25rem;
-    font-weight: 600;
-    border-radius: 10px; 
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-.cta-button:hover {
-    background-color: white; 
-    transform: scale(1.05); 
-    border: 1px solid var(--color1);
 }
 /* ----------------------------------------------
    OM OSS SIDA
