@@ -844,14 +844,10 @@ textarea.contact-inputs {
   .details-container {
     padding: 1.5rem;
     flex: 1;
-    background: white;
     border-radius: 2rem;
     text-align: center;
   }
   
-  .color-container {
-    background: rgb(250, 250, 250);
-  }
   
   .project-img {
     border-radius: 2rem;
