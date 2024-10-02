@@ -817,6 +817,12 @@ textarea.contact-inputs {
     resize: none;
     max-width: 100%;
 }
+.skicka-btn{
+    background-color: var(--color1);
+    color: white;
+    border: none;
+    height: 30px;
+}
 
 
 .projects {
