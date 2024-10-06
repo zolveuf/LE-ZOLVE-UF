@@ -241,6 +241,41 @@ a {
 .tjänster-logotyper:hover{
     color:  var(--color1);
 }
+
+.icon-section {
+    display: flex;
+    justify-content: center;
+    gap: 60px; /* Mellanrum mellan ikonerna */
+    text-align: center;
+}
+
+.icon-item i {
+    font-size: 50px;
+    color: #000000;
+}
+
+.icon-item p {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.icon-item span {
+    display: block;
+    font-size: 16px;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    .icon-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 /* ----------------------------------------------
    KUNDER SEKTION
 ---------------------------------------------- */
@@ -251,9 +286,8 @@ a {
 }
 .kunder {
     width: 100%;
-    padding: 0% 7%;
-    text-align: center;
     padding: 5% 7%;
+    text-align: center;
 }
 .kunder h1 {
     margin-bottom: 2rem;

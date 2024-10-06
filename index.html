@@ -40,7 +40,6 @@
             </label>
 
             <nav class="navbar">
-                <a href="index.html" style="--i:0">HEM</a>
                 <a href="tjänster.html" style="--i:1">TJÄNSTER</a>
                 <a href="om-oss.html" style="--i:2">OM OSS</a>
                 <a href="kontakta-oss.html" style="--i:3">KONTAKTA OSS</a>
@@ -79,14 +78,23 @@
 
     <section class="tjänster" data-aos="fade-down">
         <h1>Tjänster</h1>
-        <div class="tjänster-info">
-            <a href="tjänster.html" class="tjänster-hemsidor">
-                <h2>Hemsidor</h2>
-            </a>
-            <a href="tjänster.html#start" class="tjänster-logotyper scroll-button">
-                <h2>Logotyper</h2>
-            </a>
-        </div>
+        <div class="icon-section">
+          <div class="icon-item">
+              <i class="fas fa-laptop-code"></i>
+              <p>Webbdesign</p>
+              <span>Vi skapar moderna och funktionella hemsidor som automatiskt anpassar sig till olika skärmstorlekar just för dina behov.</span>
+          </div>
+          <div class="icon-item">
+              <i class="fas fa-paint-brush"></i>
+              <p>UX-Design</p>
+              <span>Vi bygger en positiv användarupplevelse genom att designa produkter som är effektiva och användarvänliga.</span>
+          </div>
+          <div class="icon-item">
+              <i class="fas fa-mobile-alt"></i>
+              <p>SEO</p>
+              <span>Vi optimerar din webbplats för att den ska rankas högre i sökmotorer som Google, vilket gör att fler hittar sidan.</span>
+          </div>
+      </div>
     </section>
 
     <div class="section-divider"></div>
@@ -124,7 +132,6 @@
                 <div class="footer-col">
                     <h4>Zolve UF</h4>
                     <ul>
-                        <li><a href="index.html">HEM</a></li>
                         <li><a href="om-oss.html">OM OSS</a></li>
                         <li><a href="tjänster.html">TJÄNSTER</a></li>
                         <li><a href="kontakta-oss.html">KONTAKTA OSS</a></li>
@@ -180,11 +187,10 @@
     AOS.init();
     </script>
 
-<script>
+  <script>
     window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
   </script>
   <script defer src="/_vercel/speed-insights/script.js"></script>
     
 
 </html>
-
