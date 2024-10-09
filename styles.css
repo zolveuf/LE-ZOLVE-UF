@@ -7,6 +7,7 @@
 :root{
     --color1: #535C91;
     --color2: #1B1A55; 
+    --color3: #e63417;
 }
 .img{
     width: 40%;
@@ -279,56 +280,46 @@ a {
 /* ----------------------------------------------
    KUNDER SEKTION
 ---------------------------------------------- */
-.kunder-info a {
+.header-image-link {
     display: block;
-    color: white;
-    text-decoration: none; 
+    text-align: center; /* Centrerar bilden */
 }
-.kunder {
-    width: 100%;
-    padding: 5% 7%;
-    text-align: center;
+
+.header-image {
+    width: 50%; /* Gör bilden mindre, här till 50% av förälderns bredd */
+    max-width: 300px; /* Sätter en maximal bredd för att inte bli för stor */
+    height: auto; /* Bevarar bildens proportioner */
+    display: block;
+    margin: 0 auto; /* Centrerar bilden horisontellt */
+    margin-top: 90px; 
 }
-.kunder h1 {
-    margin-bottom: 2rem;
+
+@media (max-width: 768px) {
+    .header-image {
+        width: 80%; /* Ökar storleken lite på mindre skärmar */
+        max-width: 200px; /* Minskar maxbredden på mobiler */
+    }
 }
-.kunder-info{
-    margin: 0;
-    max-width: 100%;
-    text-align: left;
-    line-height: 1.2;
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    padding: 20px 0px;
-    color: #fff;
+
+.mockup-img {
+    width: 80%; /* Gör bilden lite mindre, tar upp 80% av förälderns bredd */
+    max-width: 600px; /* Sätter en maxbredd för att begränsa storleken till 600px */
+    height: auto; /* Bevarar bildens proportioner */
+    display: block;
+    margin: 0 auto; /* Centrerar bilden horisontellt och lägger till margin */
 }
-.kunder-link-aurorastäd{
-    border: var(--color1) solid 1px;
-    padding: 20vh 16vw;
-    background-image: url(img/hemsidor-mörk.jpg);
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    transition: .3s all ease-in-out;
-    border-radius: 10px;
+
+@media (max-width: 768px) {
+    .mockup-img {
+        width: 90%; /* Gör bilden lite större på mindre skärmar */
+        max-width: 400px; /* Begränsar storleken på mobila enheter */
+    }
 }
-.kunder-link-2{
-    border: var(--color1) solid 1px;
-    padding: 20vh 16vw;
-    background-image: url(img/hemsidor-mörk.jpg);
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    transition: .3s all ease-in-out;
-    border-radius: 10px;
-}
-.kunder-link-aurorastäd:hover{
-    filter: brightness(400%);
-}
-.kunder-link-2:hover{
-    filter: brightness(400%);
-}
+
+
+
+
+
 /* ----------------------------------------------
    FOOTER
 ---------------------------------------------- */
@@ -727,6 +718,9 @@ a {
     max-width: 100%;
     border-radius: 10px;
 }
+
+           
+
 /* ----------------------------------------------
    OM OSS SIDA
 ---------------------------------------------- */
@@ -912,7 +906,34 @@ textarea.contact-inputs {
     color: var(--color1);
     gap: 1rem;
   }
+
+  .btn-container3 {
+    display: flex;
+    justify-content: center;
+    color: var(--color3);
+    gap: 1rem;
+  }
   
+  .btn3 {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    color: var(--color3);
+    width: 8rem;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+  }
+
+  .btn-color-3 {
+    background: none;
+    border: rgb(163, 163, 163) 0.1rem solid;
+  }
+
+  .btn-color-3:hover {
+    background: var(--color3);
+    color: white;
+  }
+
   .btn {
     font-weight: 600;
     transition: all 300ms ease;
@@ -976,6 +997,155 @@ textarea.contact-inputs {
 
   .tack-btn{
     margin-top: 40px;
+  }
+
+  .tjänster-info a {
+    display: block;
+    color: white;
+    text-decoration: none; 
+}
+.tjänster {
+    width: 100%;
+    padding: 0% 7%;
+    text-align: center;
+    padding: 5% 7%;
+}
+.tjänster h1 {
+    margin-bottom: 2rem;
+}
+.tjänster-info{
+    margin: 0;
+    max-width: 100%;
+    text-align: left;
+    line-height: 1.2;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 20px 0px;
+    color: #fff;
+}
+.tjänster-hemsidor{
+    border: var(--color1) solid 1px;
+    padding: 10vw 10%;
+    background-image: url(img/hemsidor-mörk.JPG);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    transition: .3s all ease-in-out;
+    border-radius: 10px;
+}
+.tjänster-hemsidor:hover{
+    color:  var(--color1);
+}
+.tjänster-logotyper{
+    border: var(--color1) solid 1px;
+    padding: 10vw 10%;
+    background-image: url(img/logotyper-mörk.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    transition: .3s all ease-in-out;
+    border-radius: 10px;
+}
+.tjänster-logotyper:hover{
+    color:  var(--color1);
+}
+
+.icon-section {
+    display: flex;
+    justify-content: center;
+    gap: 60px; /* Mellanrum mellan ikonerna */
+    text-align: center;
+}
+
+.icon-item i {
+    font-size: 50px;
+    color: #000000;
+}
+
+.icon-item p {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.icon-item span {
+    display: block;
+    font-size: 16px;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    .icon-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.header-image-link {
+    display: block;
+    text-align: center; /* Centrerar bilden */
+}
+
+.header-image {
+    width: 50%; /* Gör bilden mindre, här till 50% av förälderns bredd */
+    max-width: 300px; /* Sätter en maximal bredd för att inte bli för stor */
+    height: auto; /* Bevarar bildens proportioner */
+    display: block;
+    margin: 0 auto; /* Centrerar bilden horisontellt */
+    margin-top: 90px; 
+}
+
+@media (max-width: 768px) {
+    .header-image {
+        width: 80%; /* Ökar storleken lite på mindre skärmar */
+        max-width: 200px; /* Minskar maxbredden på mobiler */
+    }
+}
+
+.mockup-img {
+    width: 80%; /* Gör bilden lite mindre, tar upp 80% av förälderns bredd */
+    max-width: 600px; /* Sätter en maxbredd för att begränsa storleken till 600px */
+    height: auto; /* Bevarar bildens proportioner */
+    display: block;
+    margin: 0 auto; /* Centrerar bilden horisontellt och lägger till margin */
+}
+
+@media (max-width: 768px) {
+    .mockup-img {
+        width: 90%; /* Gör bilden lite större på mindre skärmar */
+        max-width: 400px; /* Begränsar storleken på mobila enheter */
+    }
+}
+
+.btn-container3 {
+    display: flex;
+    justify-content: center;
+    color: var(--color3);
+    gap: 1rem;
+  }
+  
+  .btn3 {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    color: var(--color3);
+    width: 8rem;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+  }
+
+  .btn-color-3 {
+    background: none;
+    border: rgb(163, 163, 163) 0.1rem solid;
+  }
+
+  .btn-color-3:hover {
+    background: var(--color3);
+    color: white;
   }
 
 
