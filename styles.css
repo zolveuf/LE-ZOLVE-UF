@@ -1253,7 +1253,6 @@ textarea.contact-inputs {
     padding: 10px 20px;
     cursor: pointer;
     margin-top: auto; /* Push the button to the bottom */
-    position: absolute;
     bottom: 10px;
   }
   
@@ -1276,7 +1275,6 @@ textarea.contact-inputs {
     padding: 10px 20px;
     cursor: pointer;
     margin-top: auto; /* Push the button to the bottom */
-    position: absolute;
     bottom: 10px;
   }
   
@@ -1298,7 +1296,6 @@ textarea.contact-inputs {
     padding: 10px 20px;
     cursor: pointer;
     margin-top: auto; /* Push the button to the bottom */
-    position: absolute;
     bottom: 10px;
   }
   
