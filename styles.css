@@ -1316,7 +1316,7 @@ textarea.contact-inputs {
   
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20.5rem, 1fr));
+    /*grid-template-columns: repeat(auto-fill, minmax(20.5rem, 1fr));*/
     gap: 20px;
   }
   
