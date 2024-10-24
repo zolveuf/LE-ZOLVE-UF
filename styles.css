@@ -205,6 +205,11 @@ a {
     text-align: center;
     padding: 5% 7%;
 }
+.projekt-title {
+    width: 100%;
+    padding: 0% 0%;
+    text-align: center;
+}
 .tjänster h1 {
     margin-bottom: 2rem;
 }
@@ -1223,23 +1228,7 @@ textarea.contact-inputs {
 
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20.5rem, 1fr));
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  .grid-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-    padding: 60px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-  }
+
   
   .company-logo {
     max-width: 250px;
@@ -1255,6 +1244,7 @@ textarea.contact-inputs {
   .view-more-btn-aurora {
     font-weight: 600;
     transition: all 300ms ease;
+    background-color: transparent;
     padding: 1rem;
     color: var(--color3);
     width: 8rem;
@@ -1274,6 +1264,8 @@ textarea.contact-inputs {
   .view-more-btn-equalkidz {
     font-weight: 600;
     transition: all 300ms ease;
+    background-color: transparent;
+
     padding: 1rem;
     color: var(--color4);
     width: 8rem;
@@ -1292,6 +1284,8 @@ textarea.contact-inputs {
   .view-more-btn-flexiworker {
     font-weight: 600;
     transition: all 300ms ease;
+    background-color: transparent;
+
     padding: 1rem;
     color: #edce51;
     width: 8rem;
@@ -1308,3 +1302,32 @@ textarea.contact-inputs {
     color: white;
   }
   
+  .grid-wrapper {
+    max-width: 1200px; /* Adjust the maximum width for larger screens */
+    margin: 0 auto; /* Centers the content with equal side margins */
+    padding: 0 0px; /* Adds padding on both sides */
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20.5rem, 1fr));
+    gap: 20px;
+  }
+  
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+  @media (max-width: 600px) {
+    .grid-wrapper {
+      padding: 0 20px; /* Reduce padding for very small screens */
+    }
+  }
