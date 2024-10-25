@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lora', serif;
+    font-family: 'Poppins', serif;
 }
 :root{
     --color1: #535C91;
@@ -31,7 +31,6 @@ ul{
 	list-style: none;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lora', serif; 
     font-weight: 400;
 }
 h1 {
@@ -60,7 +59,7 @@ a {
 }
 .section-divider {
     height: 2px;
-    background: linear-gradient(to right, transparent, var(--color1), transparent);
+    background: linear-gradient(to right, transparent, var(--color2), transparent);
     margin: 2rem 0; /* Adjust spacing as needed */
 }
 /* ----------------------------------------------
