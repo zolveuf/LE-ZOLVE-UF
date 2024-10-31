@@ -1,3 +1,5 @@
+// ANIMATIONER
+//ANIMATIONER SKER BARA VID NERSKROLLNING
 let lastScrollTop = 0; // Variable to store the last scroll position
 
 window.addEventListener('scroll', function() {
@@ -17,3 +19,8 @@ window.addEventListener('scroll', function() {
 
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
 });
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+AOS.init();
+

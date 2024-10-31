@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professionella Hemsidor och Logotyper i Ljungby | Zolve UF</title>
-    <link rel="stylesheet" href="styles.css">
+
     <meta name="description" content="Vi är ett UF företag i Ljungby som erbjuder professionella hemsidor och logotyper för företag. Boka en konsultation idag!">
     <meta name="keywords" content="hemsidor Ljungby, logotyper Ljungby, webbdesign Småland, UF företag, webbdesign för företag, professionell webbdesign, digital marknadsföring Ljungby">
     <meta name="robots" content="index, follow">
@@ -15,199 +14,203 @@
     <meta property="og:image" content="https://www.zolveuf.se/img/logo.png">
     <meta property="og:url" content="https://www.zolveuf.se">
     <link rel="icon" href="img/logo.png">
+
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="preload" href="img/hero.jpg" as="image" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <meta name="google-site-verification" content="F4etF3pqgYysQvSq6y0QU_BXNxvhsctr_psod3Qw6aw" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <script src="script.js"></script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Zolve UF",
+          "url": "https://www.zolveuf.se",
+          "logo": "https://www.zolveuf.se/img/logo.png",
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "telephone": "+46768084164",
+              "contactType": "customer service",
+              "areaServed": "SE",
+              "availableLanguage": "sv"
+            }
+          ]
+        }
+    </script>
 
-    
-        
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/> <!--ANIMATIONER-->
+
 </head>
 
 <body>
-    <section class="navigation-bar">
 
-        <header class="header">
-            <a href="index.html" class="logo">ZOLVE UF</a>
+    <main>
 
-            <input type="checkbox" id="check">
-            <label for="check" class="icons">
-                <i class='bx bx-menu' id="menu-icon"></i>
-                <i class='bx bx-x' id="close-icon"></i>
-            </label>
+        <!--HEADER SECTION-->
 
-            <nav class="navbar">
-                <a href="tjänster.html" style="--i:1">TJÄNSTER</a>
-                <a href="om-oss.html" style="--i:2">OM OSS</a>
-                <a href="kontakta-oss.html" style="--i:3">KONTAKTA OSS</a>
-                <a href="https://www.instagram.com/zolveuf/" target="_blank" style="--i:3" target="_blank"><i class='bx bxl-instagram'></i></a>
-            </nav>
-        </header>
+        <section class="navigation-bar">
 
-        <div class="hero-content" aria-label="UF-företag i Ljungby som gör hemsidor och logotyper">
-            <h1 class="hero-title">Välkommen till <br> Zolve UF!</h1>
-            <p class="hero-description">Vi förnyar din digitala närvaro med moderna hemsidor <br>och skräddarsydda tjänster för ett fräschare avtryck.</p>
-            <button
-            class="btn btn-color-1 project-btn"
-              onclick="location.href='kontakta-oss.html'"
-          >
-            Kontakta oss
-          </button>        </div>
+            <header class="header" data-aos="fade-down">
+                <a href="index.html" class="logo">ZOLVE UF</a>
+        
+                <input type="checkbox" id="check">
+                <label for="check" class="icons">
+                    <i class='bx bx-menu' id="menu-icon"></i>
+                    <i class='bx bx-x' id="close-icon"></i>
+                </label>
+        
+                <nav class="navbar">
+                    <a href="tjänster.html">TJÄNSTER</a>
+                    <a href="om-oss.html">OM OSS</a>
+                    <a href="kontakta-oss.html">KONTAKTA OSS</a>
+                    <a href="https://www.instagram.com/zolveuf/" target="_blank">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                </nav>
+            </header>
+        
+            <div class="hero-content" aria-label="UF-företag i Ljungby som gör hemsidor och logotyper">
+                <h1 class="hero-title">Välkommen till <br> Zolve UF!</h1>
+                <p class="hero-description">
+                    Vi förnyar din digitala närvaro med moderna hemsidor <br>
+                    och skräddarsydda tjänster för ett fräschare avtryck.
+                </p>
+                <button class="btn" onclick="location.href='kontakta-oss.html'">
+                    Kontakta oss
+                </button>
+            </div>
 
-    </section>
+        </section>
 
+        <section class="section-divider"></section>
 
+        <!--PROJEKT SECTION-->
 
-    <div class="section-divider"></div>
+        <section data-aos="fade-down">
 
-    <section>
-
-        <h1 class="projekt-title">Projekt</h1>
-  
+            <h1 class="title">Projekt</h1>
     
-        <div class="grid-wrapper">
-            <div class="grid-container">
-                <div class="grid-item">
-                    <img src="img/Aurora Städ.png" alt="Company Logo 1" class="company-logo">
-                    <img src="img/Namnlös design (4).png" alt="Website Mockup 1" class="website-mockup">
-                    <a target="_blank" class="inget" href="https://aurorastad.se/"><button class="view-more-btn-aurora">Besök</button></a>
-                </div>
-                <div class="grid-item">
-                    <img src="img/logo.jpeg" alt="Company Logo 2" class="company-logo">
-                    <img src="img/Equalkidz mockup.png" alt="Website Mockup 2" class="website-mockup">
-                    <a target="_blank" class="inget" href="https://equalkidz.se/"><button class="view-more-btn-equalkidz">Besök</button></a>
-                </div>
-                <div class="grid-item">
-                    <img src="img/flexiworker-logga.png" alt="Company Logo 3" class="company-logo">
-                    <img src="img/Flexiworker mockup (2).png" alt="Website Mockup 3" class="website-mockup">
-                    <a target="_blank" class="inget" href="https://flexiworkeruf.se/"><button class="view-more-btn-flexiworker">Besök</button></a>
+            <div class="grid-wrapper">
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="img/Aurora Städ.png" alt="Company Logo 1" class="company-logo">
+                        <img src="img/aurora-mockup.png" alt="Website Mockup 1" class="website-mockup">
+                        <a target="_blank" class="inget" href="https://aurorastad.se/"><button class="btn aurorastäd">Besök</button></a>
+                    </div>
+                    <div class="grid-item">
+                        <img src="img/logo.jpeg" alt="Company Logo 2" class="company-logo">
+                        <img src="img/Equalkidz mockup.png" alt="Website Mockup 2" class="website-mockup">
+                        <a target="_blank" class="inget" href="https://equalkidz.se/"><button class="btn equalkidz">Besök</button></a>
+                    </div>
+                    <div class="grid-item">
+                        <img src="img/flexiworker-logga.png" alt="Company Logo 3" class="company-logo">
+                        <img src="img/Flexiworker mockup (2).png" alt="Website Mockup 3" class="website-mockup">
+                        <a target="_blank" class="inget" href="https://flexiworkeruf.se/"><button class="btn flexiworker">Besök</button></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    
 
-    <div class="section-divider"></div>
+        </section>
 
+        <section class="section-divider"></section>
 
+        <!--TJÄNSTER SECTION-->
 
+        <section class="tjänster" data-aos="fade-down">
 
-    <section class="tjänster" data-aos="fade-down">
-        <h1>Tjänster</h1>
-        <div class="icon-section">
-          <div class="icon-item">
-              <i class="fas fa-laptop-code"></i>
-              <p>Webbdesign</p>
-              <span>Vi skapar moderna och funktionella hemsidor som automatiskt anpassar sig till olika skärmstorlekar just för dina behov.</span>
-          </div>
-          <div class="icon-item">
-              <i class="fas fa-paint-brush"></i>
-              <p>UX-Design</p>
-              <span>Vi bygger en positiv användarupplevelse genom att designa produkter som är effektiva och användarvänliga.</span>
-          </div>
-          <div class="icon-item">
-              <i class="fas fa-mobile-alt"></i>
-              <p>SEO</p>
-              <span>Vi optimerar din webbplats för att den ska rankas högre i sökmotorer som Google, vilket gör att fler hittar sidan.</span>
-          </div>
-      </div>
-    </section>
+            <h1 class="title">Tjänster</h1>
+            <div class="icon-section">
+                <div class="icon-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <h2>Webbdesign</h2>
+                    <p>Vi skapar moderna och funktionella hemsidor som automatiskt anpassar sig till olika skärmstorlekar just för dina behov.</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-paint-brush"></i>
+                    <h2>UX-Design</h2>
+                    <p>Vi bygger en positiv användarupplevelse genom att designa produkter som är effektiva och användarvänliga.</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h2>SEO</h2>
+                    <p>Vi optimerar din webbplats för att den ska rankas högre i sökmotorer som Google, vilket gör att fler hittar sidan.</p>
+                </div>
+            </div>
+            
+        </section>
 
-    <div class="section-divider"></div>
+        <section class="section-divider"></section>
 
+        <!--UF-PAKET SECTION-->
 
-    <section class="uf-paket" data-aos="fade-down">
-        <h1>UF-Paket</h1>
-        <h2>För Ditt UF</h2>
-        <div class="uf-paket-info">
-            <p>Vi erbjuder kostnadseffektiva digitala lösningar för UF-företag som vill skapa en stark online-närvaro utan att spräcka budgeten. Få en professionell hemsida och digitala verktyg som hjälper dig växa och nå ut med din verksamhet.</p>
-            <button
-            class="btn btn-color-2 project-btn"
-              onclick="location.href='kontakta-oss.html'"
-          >
-            Kontakta oss
-          </button>        </div>
-    </section>
+        <section class="uf-paket" data-aos="fade-down">
+            <h1>UF-Paket</h1>
+            <h2>För Ditt UF</h2>
+            <div class="uf-paket-info">
+                <p>
+                    Vi erbjuder kostnadseffektiva digitala lösningar för UF-företag som vill skapa en stark online-närvaro utan att spräcka budgeten. 
+                    Få en professionell hemsida och digitala verktyg som hjälper dig växa och nå ut med din verksamhet.
+                </p>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='kontakta-oss.html'">
+                    Kontakta oss
+                </button>
+            </div>
+        </section>        
 
-    <div class="section-divider"></div>
+        <!--FOOTER SEKTION-->
 
-
-
-  
-
-
+    </main>
 
     <footer class="footer">
+
         <div class="container">
             <div class="row">
                 <div class="footer-col">
                     <h4>Zolve UF</h4>
                     <ul>
-                        <li><a href="om-oss.html">OM OSS</a></li>
-                        <li><a href="tjänster.html">TJÄNSTER</a></li>
-                        <li><a href="kontakta-oss.html">KONTAKTA OSS</a></li>
+                        <li><a href="tjänster.html">Tjänster</a></li>
+                        <li><a href="om-oss.html">Om oss</a></li>
+                        <li><a href="kontakta-oss.html">Kontakta oss</a></li>
                     </ul>
                 </div>
-                
+    
                 <div class="footer-col">
                     <h4>Kontakta oss</h4>
                     <ul>
-                        <li><a href="kontakta-oss.html">Mail: zolveuf@gmail.com</a></li>
-                        <li><a href="tel:+46768084264">Oscar: 076 808 42 64 </a></li>
+                        <li><a href="mailto:zolveuf@gmail.com">Email: zolveuf@gmail.com</a></li>
+                        <li><a href="tel:+46768084264">Oscar: 076 808 42 64</a></li>
                         <li><a href="tel:+46735411018">Martin: 073 541 10 18</a></li>
                     </ul>
                 </div>
-
-
+    
                 <div class="footer-col">
                     <h4>Följ oss</h4>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/zolveuf/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/zolveuf/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
+        <p class="footer-end">Made by &copy; Zolve UF 2024</p>
+        
+    </footer>
 
-        <p class="footer-end">Made by &copy;Zolve UF 2024</p>
-   </footer>
-
-   
 </body>
 
-<script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Zolve UF",
-      "url": "https://www.zolveuf.se",
-      "logo": "https://www.zolveuf.se/img/logo.png",
-      "contactPoint": [
-        {
-          "@type": "ContactPoint",
-          "telephone": "+46768084164",
-          "contactType": "customer service",
-          "areaServed": "SE",
-          "availableLanguage": "sv"
-        }
-      ]
-    }
-    </script>
+<script>window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); }; </script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init();</script>
 
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-    AOS.init();
-    </script>
 
-  <script>
-    window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
-  </script>
-  <!--<script defer src="/_vercel/speed-insights/script.js"></script>-->
-    
+
+
 
 </html>
