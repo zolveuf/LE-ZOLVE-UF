@@ -334,3 +334,22 @@ UF-PAKET SECTION
         text-align: center;
     }
 }
+/*======================================================
+TA BORT HOVER EFFECTS PÅ MOBIL
+========================================================*/
+@media (hover: none) {
+    .navbar a:hover {
+        color: white; 
+    }
+    .header:hover::after {
+        left: -100%; 
+    }
+    .grid-item:hover {
+        box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1); 
+    }
+    .aurorastäd:hover,
+    .equalkidz:hover,
+    .flexiworker:hover {
+        background-color: transparent; 
+    }
+}
