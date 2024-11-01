@@ -228,18 +228,21 @@ PROJEKT SECTION
 }
 .aurorastäd:hover{
     background-color: var(--color3);
+    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.3), 0 0 1.5rem var(--color3); /* Soft glow effect */
 }
 .equalkidz{
     color: #6986a0; /*Har gjorts lite mörkare för bättre kontrast*/
 }
 .equalkidz:hover{
     background-color: #6986a0; /*Har gjorts lite mörkare för bättre kontrast*/
+    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.3), 0 0 1.5rem #6986a0; /* Soft glow effect */
 }
 .flexiworker{
     color: var(--color5);
 }
 .flexiworker:hover{
     background-color: var(--color5);
+    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.3), 0 0 1.5rem var(--color5); /* Soft glow effect */
 }
 @media (max-width: 600px){
     .grid-wrapper {
@@ -353,3 +356,4 @@ TA BORT HOVER EFFECTS PÅ MOBIL
         background-color: initial; 
     }
 }
+
