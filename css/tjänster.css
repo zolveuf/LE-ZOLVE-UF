@@ -1,18 +1,15 @@
-.service-info {
-    padding: 10px 0;
-}
+
 .service-info-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 2%;
     flex-wrap: wrap;
 }
 .service-info-text {
     flex-basis: 55%;
-    padding: 40px;
+    padding: 10px;
 }
 .service-info-text h1 {
     font-size: 3.5rem;

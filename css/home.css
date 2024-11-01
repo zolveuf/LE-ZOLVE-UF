@@ -99,6 +99,7 @@ HEADER SECTION
 }
 .hero-title {
   font-size: 3rem;
+  font-weight: 700;
   margin-bottom: 0.5rem;
 }
 .hero-description {
@@ -294,7 +295,8 @@ UF-PAKET SECTION
 ========================================================*/
 .uf-paket{
     width: 100%;
-    padding: 4% 7%;
+    padding: 0% 7%;
+    padding-bottom: 4%;
     display: flex;
     flex-direction: column;
     justify-content: center;
