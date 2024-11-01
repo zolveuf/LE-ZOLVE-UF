@@ -202,8 +202,13 @@ TA BORT HOVER EFFECTS PÅ MOBIL
 ========================================================*/
 @media (hover: none) {
   .btn:hover {
-      background-color: transparent;
-      color: var(--color1); 
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    color: var(--color1);
+    width: 8rem;
+    border-radius: 2rem;
+    border: transparent 0.1rem solid;
   }
   .footer-col ul li a:hover {
       color: #bbbbbb; 

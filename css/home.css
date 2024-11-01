@@ -350,6 +350,6 @@ TA BORT HOVER EFFECTS PÅ MOBIL
     .aurorastäd:hover,
     .equalkidz:hover,
     .flexiworker:hover {
-        background-color: transparent; 
+        background-color: initial; 
     }
 }
