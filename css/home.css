@@ -204,10 +204,44 @@ PROJEKT SECTION
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     transition: all ease-in-out 300ms;
+    overflow: hidden;
+
 }
-.grid-item:hover{
+  .grid-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(to bottom right, #535C91, #E5E5E5);
+    transition: transform 0.4s ease;
+    transform: scale(0);
+    filter: blur(200px);
+    transform-origin: bottom right;
+  }
+  .grid-item-aurora::before{
+    background: linear-gradient(to bottom right, #e63417, #E5E5E5);
+  }
+  .grid-item-equalkidz::before{
+    background: linear-gradient(to bottom right, #b9cfe4, #E5E5E5);
+  }
+  .grid-item-flexiworker::before{
+    background: linear-gradient(to bottom right, #edce51, #E5E5E5);
+  }
+
+  .grid-item:hover::before {
+    transform: scale(1);
+    transform-origin: top left;
+  }
+
+  .grid-item:hover {
+    background-color: transparent;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
+  }
+
+  
 .title{
     width: 100%;
     margin-bottom: 2rem;
