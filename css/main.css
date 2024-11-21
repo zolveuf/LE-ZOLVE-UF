@@ -218,17 +218,3 @@ TACK SECTION
   margin-top: 2%;
   width: 12rem;
 }
-/*======================================================
-TA BORT HOVER EFFECTS PÅ MOBIL
-========================================================*/
-@media (hover: none) {
-
-  .footer-col ul li a:hover {
-      color: #bbbbbb; 
-      padding-left: 0;
-  }
-  .footer-col .social-links a:hover {
-      color: #ffffff;
-      background-color: rgba(255, 255, 255, 0.2);
-  }
-}
