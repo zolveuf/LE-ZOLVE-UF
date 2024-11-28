@@ -72,22 +72,6 @@ a{
     box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.3), 0 0 1.5rem var(--color1); /* Soft glow effect */
   }
 }
-
-/* Disable hover effect for touch devices */
-@media (hover: none) and (pointer: coarse) {
-  .box {
-    font-weight: 600;
-    transition: all 300ms ease;
-    padding: 1rem;
-    color: var(--color1);
-    width: 8rem;
-    border-radius: 2rem;
-    border: transparent 0.1rem solid;
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */  }
-}
-
-
-
 /*======================================================
 NAVBAR-2 SECTION
 ========================================================*/

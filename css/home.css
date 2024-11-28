@@ -215,20 +215,6 @@ PROJEKT SECTION
     }
   }
   
-  /* Disable hover effect for touch devices */
-  @media (hover: none) and (pointer: coarse) {
-    .grid-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        border-radius: 10px;
-        padding: 60px;
-        box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
-        position: relative;
-        transition: all ease-in-out 300ms;
-        overflow: hidden; }
-  }
 
 .title{
     width: 100%;
@@ -255,12 +241,7 @@ PROJEKT SECTION
     }
   }
   
-  /* Disable hover effect for touch devices */
-  @media (hover: none) and (pointer: coarse) {
-    .aurorastäd {
-        color: var(--color3);
-  }
-}
+
 
 
 .equalkidz{
@@ -273,12 +254,7 @@ PROJEKT SECTION
     }
   }
   
-  /* Disable hover effect for touch devices */
-  @media (hover: none) and (pointer: coarse) {
-    .equalkidz {
-        color: #6986a0; /*Har gjorts lite mörkare för bättre kontrast*/
-    }
-}
+
 
 
 .flexiworker{
@@ -291,12 +267,6 @@ PROJEKT SECTION
     }
   }
   
-  /* Disable hover effect for touch devices */
-  @media (hover: none) and (pointer: coarse) {
-    .flexiworker {
-        color: var(--color5);
-    }
-}
 
 
 @media (max-width: 600px){
